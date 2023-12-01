@@ -1,0 +1,13 @@
+POST http://localhost:3001/api/persons/
+Content-Type: application/json
+
+{
+    "name": "Liisa Marttinen",
+    "number": "040-243563"
+}
+
+###
+GET http://localhost:3001/api/persons
+
+###
+PUT http://localhost:3001/api/persons/650d02b72f0a1a5fcbea4023

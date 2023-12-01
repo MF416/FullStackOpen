@@ -1,0 +1,50 @@
+###
+GET http://localhost:3003/api/blogs
+
+###
+POST http://localhost:3003/api/blogs
+Content-type: application/json
+
+{
+  "title": "Third blogpost test",
+  "author": "Neumann",
+  "url": "youtube.com",
+  "likes": 2000
+}
+
+###
+POST http://localhost:3003/api/users
+Content-type: application/json
+  
+  {
+    "username": "root2",
+    "name": "John Jacob Jingleheimer Schmidt",
+    "password": "assdf"
+  }
+
+### test user auth
+POST http://localhost:3003/api/login
+Content-type: application/json
+
+{
+  "username": "root2",
+  "password": "assdf"
+}
+
+### new blogpost
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QyIiwiaWQiOiI2NTYzYzNkMjhkMDAxYzlkYjc5NjhhYmQiLCJpYXQiOjE3MDEwNDQ4MjZ9.3STSJl8MsQpreaaeYmZbuw7YG9QFRlbD-9T13uv6ves
+
+{
+  "title": "seventh blogpost test",
+  "author": "Jenner",
+  "url": "youtube.com",
+  "likes": 300
+}
+
+### delete blogpost
+DELETE http://localhost:3003/api/blogs/6563e3e2b5a347b14a465046
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QyIiwiaWQiOiI2NTYzYzNkMjhkMDAxYzlkYjc5NjhhYmQiLCJpYXQiOjE3MDEwNDQ4MjZ9.3STSJl8MsQpreaaeYmZbuw7YG9QFRlbD-9T13uv6ves
+

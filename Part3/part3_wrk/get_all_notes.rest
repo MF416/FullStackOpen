@@ -1,0 +1,21 @@
+
+GET http://localhost:3001/api/notes/
+
+
+###
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+    
+{
+"content": "lol",
+"important": true
+}
+
+###
+PUT http://localhost:3001/api/notes/651f48293e2be041dd6c8e16
+Content-Type: application/json
+
+{
+"content": "Ensure that everything still works",
+"important": false
+}

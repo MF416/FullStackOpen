@@ -1,0 +1,43 @@
+
+GET http://localhost:3001/api/notes/
+
+
+###
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1mNDE4IiwiaWQiOiI2NTMzZjkxMmE4YjZjMTYwYTE3ZTM5MzUiLCJpYXQiOjE2OTc5MDY1MjR9.uR2wRY_KOFM9gOek8OG_jFoPUOqr1kR5cjidSwsJfKc
+    
+{
+"content": "Authenticated test",
+"important": true,
+"userId": "6533f912a8b6c160a17e3935"
+}
+
+###
+PUT http://localhost:3001/api/notes/651f48293e2be041dd6c8e16
+Content-Type: application/json
+
+{
+"content": "Ensure that everything still works",
+"important": false
+}
+
+###
+POST http://localhost:3001/api/users
+Content-Type: application/json
+
+
+{
+    "username": "mf418",
+    "name": "Matthew Frehlich",
+    "password": "blahblahblah"
+}
+
+###
+POST http://localhost:3001/api/login
+Content-Type: application/json
+
+{
+    "username": "mf418",
+    "password": "blahblahblah"
+}
