@@ -1,0 +1,54 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "content": "custom-hooks are awesome!"
+    },
+    {
+      "id": 2,
+      "content": "best feature ever <3"
+    },
+    {
+      "content": "New isht",
+      "id": 3
+    },
+    {
+      "content": "Wagmi",
+      "id": 4
+    },
+    {
+      "content": "New state features are great",
+      "id": 5
+    },
+    {
+      "content": "New state features are great",
+      "id": 6
+    },
+    {
+      "content": "Re-do features",
+      "id": 7
+    }
+  ],
+  "persons": [
+    {
+      "id": 1,
+      "name": "mluukkai",
+      "number": "040-5483923"
+    },
+    {
+      "id": 2,
+      "name": "hellas",
+      "number": "012-123123"
+    },
+    {
+      "name": "John Smith",
+      "number": "111-22-3433",
+      "id": 3
+    },
+    {
+      "name": "Matt F",
+      "number": "324-5436",
+      "id": 4
+    }
+  ]
+}
